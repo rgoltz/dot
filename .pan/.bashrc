@@ -16,7 +16,7 @@ echo "|--> awscli pre-check: output active version of awscli:"
 aws --version
 echo "---| "
 echo "|--> CDK pre-check: check and set default Node.JS to fixed LTS version 16."
-nvm install 16.16.0
+nvm install 16.18.1
 echo "---| "
 echo "|--> CDK pre-check: check if terminal supports CDK cmds."
 command -v cdk --version >/dev/null 2>&1 || { echo "WARN: CDK is missing here in this terminal  o_o " >&2; }
